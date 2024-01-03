@@ -1,0 +1,236 @@
+% \documentclass[conference] {IEEEtran}
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{cite}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{A critical analysis of the methodologies of two research papers investigating the impact of large language models in an educational context}
+\author{Author Anonymised}
+\date{January 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Since the discovery of the Transformer Architecture in 2017, Large Language Models (LLMs) have grown enormously in power and scope \cite{kaplan2020scaling}. Unlike an RNN, which is inherently sequential \cite{cho2014learning}, a Transformer has a parallel internal architecture that can be trained quickly using a modern GPU \cite{vaswani}. Given that a transformer receives its entire context window at once rather than sequentially, transformers do not suffer from the vanishing gradient problem that previously limited the power of RNNs \cite{hochreiter, kuchaiev2018factorization}. 
+
+It is hard to overstate the impact that deep learning could have on all areas of human activity \cite{noy}. Significant advances have recently been made in the fields of biochemistry \cite{alphafold}, materials science \cite{Merchant2023}, image and video generation \cite{ho2020denoising, yang2023diffusion}, medicine \cite{Wong2023}, and robot control \cite{anymal}, to name a few. 
+
+It seems plausible that language models such as ChatGPT will continue to push this frontier. Evidence points to the potential for massive increases in worker productivity, on a par with the Industrial Revolution \cite{noy}. The societal impacts of this increase remain to be seen.
+
+In this report, we will analyse and contrast two research papers that seek to investigate the impact of ChatGPT specifically on academia. We will investigate their methods and methodologies, and how these methodologies support their hypotheses. We will conclude with a discussion of qualitative and quantitative methodologies, making reference to both Mertens \cite{mertens} and Allwood \cite{allwood}.
+
+
+\section{Task 1 - Evaluation of Both Papers}
+
+Two papers are presented. "ChatGPT - Boon or Bane" (paper one) \cite{paper1} presents a simple quantitive analysis correlating awareness of ChatGPT amongst students to field of study and gender. In contrast, "Exploring Students' Perceptions of ChatGPT" (paper two) \cite{paper2} adopts a more sophisticated two-stage mixed methods analysis of student attitudes towards ChatGPT.
+
+Both these papers seek to investigate student engagement with ChatGPT, but each adopts a different methodology and has different research goals. We will compare and contrast these two papers, their respective hypotheses, methodologies and methods, then propose an extension for paper one. We shall conclude with a discussion of qualitative vs. quantitative methodologies in the context of research. 
+
+Paper one adopts a simple quantitative methodology. An online survey was distributed via email, which looked for correlations between demographics and the awareness of ChatGPT among students.
+
+The paper proposes the following research goals:
+
+\begin{enumerate}
+    \item "Empirically analyse the awareness regarding ChatGPT among the students."
+    \item "Highlighting the opportunities and challenges of ChatGPT." \cite{paper1}
+\end{enumerate}
+
+To support these goals, the paper proposes the following null hypotheses:
+
+\begin{enumerate}
+    \item "There is no significant difference in the awareness level of ChatGPT based on gender."
+    \item "There is no significant difference in the awareness level of ChatGPT based on the field of study." \cite{paper1}
+\end{enumerate}
+
+Both these hypotheses support the first research goal. No hypotheses are proposed to support the second research goal, and this could be considered a weakness of the paper.
+
+These hypotheses are interesting in that they propose that there is no correlation between the various pieces of data that were collected in the survey. In other words, all genders and fields of study have the same level of awareness of ChatGPT.
+
+The method used in paper one aligns well with its first research goal, and also with its hypotheses. A quantitative approach, through an online survey, is an appropriate way of gauging awareness levels among a large group of students. This method allows for the collection of measurable data that can be statistically analysed. \cite{cresswell}
+
+Independent sample t-tests are suitable for evaluating hypotheses one, that there is no correlation between awareness of ChatGPT and on gender and field of study. \cite{kim2019-wu}
+
+However, the study's reliance on self-reported data from a single method (online survey) could limit the depth of understanding. The results might be influenced by self-selection bias, as the respondents chose to participate. Perhaps students who are already engaged with ChatGPT might be more interested in responding. The study's findings might not be generalisable beyond the specific demographic of college students who participated.
+
+The limited scope of the questionnaire curtails the types of conclusions that can be drawn from it; the results are limited to discussions of gender and field of study. The paper also makes very little attempt to tackle the second research question it proposes, relying exclusively on secondary sources. No primary data is presented to answer the headline question "boon or bane" and this also could be considered a weakness.
+
+In contrast, paper two adopts a mixed methodology. A two-phased approach is employed to gather both qualitative and quantitative data.
+
+In phase one, the author conducts a thematic analysis. Qualitative data was collected through an open-ended question posed to students after completion of a learning activity. The students' responses were then analysed using Taguette \cite{taguette}, a qualitative data analysis tool, to identify patterns or themes. These themes were used to understand students' perceptions of ChatGPT in an educational context.
+
+In phase two, the author conducts a follow-up survey. A questionnaire was developed based on the themes discovered during phase one. Students were required to indicate their level of agreement with various statements related to ChatGPT. This survey aimed to produce quantitative data relating to students' perceptions of ChatGPT.
+
+The paper proposes two research questions:
+
+\begin{enumerate}
+    \item "How do students perceive ChatGPT in the context of learning?"
+    \item "What are ChatGPT's pros and cons from students' perspectives?" \cite{paper2}
+\end{enumerate}
+
+The paper does not explicitly propose a hypothesis. However, reading between the lines, a hypothesis could be something like:
+
+\begin{enumerate}
+    \item Students' perceptions of ChatGPT in educational settings are predominantly positive.
+    \item Students have notable concerns regarding the accuracy, ethical implications, and dependency on AI for educational purposes.
+\end{enumerate}
+
+This two-stage method effectively addresses these hypotheses. Initially, the thematic analysis of students' written responses provides qualitative insights into their perceptions of ChatGPT, both positive and negative. This approach is suitable for exploring attitudes and experiences, allowing for an in-depth understanding of students' views. \cite{mertens}
+
+In the follow-up survey, quantitative data is gathered, offering a more systematic view of student opinions and enabling the statistical identification of trends. This combination of qualitative and quantitative methodologies enhances the study's comprehensiveness. The qualitative phase informs and directs the quantitative phase. \cite{merriam}
+
+By using this mixed-methods approach, the study effectively addresses the research questions, providing both detailed insights and overarching trends in student perceptions of ChatGPT in an educational context. This dual approach allows for a more nuanced understanding, thereby aligning well with the research objectives.
+
+These two papers tackle similar themes but in different ways. Both papers use primary sources, but paper one adopts a simple quantitative methology compared to paper two's mixed methods.
+
+Paper one is somewhat limited in scope, two pieces of demographic data are collected and then correlated against usage of ChatGPT. On the other hand, paper two's usage of an initial open-ended question allows for the development of a more interesting second stage that better reflects the experiences of the experimental participants. This allows for a more nuanced analysis. For this reason, the approach adopted in paper two could be considered more robust and mature.
+
+
+
+\section{Task 2 - Recommendations for one paper}
+
+As mentioned above, paper one sets out two objectives:
+
+\begin{enumerate}
+    \item "Empirically analyse the awareness regarding ChatGPT among the students."
+    \item "Highlighting the opportunities and challenges of ChatGPT." \cite{paper2}
+\end{enumerate}
+
+The paper investigates objective one with two hypotheses (see above) and a survey but fails to tackle objective two with any primary research.
+
+An interesting way to tackle the second objective might be an impact analysis combined with a thematic longitudinal study. 
+
+An academic test could be carried out before and after the introduction of an LLM into an organisation. Quantitative metrics could be collected, which might include grades or the ability to complete a particular task without the use of the LLM. The delta between these two tests could be correlated with total engagement with the technology.
+
+This analysis could be complemented with a longitudinal study that would attempt to extract qualitative data about the specific ways students interact with the LLM. This qualitative data could be subjected to thematic analysis \cite{taguette}, allowing further insights to be gleaned as to the specific ways in which large language models might be beneficial or harmful.
+
+\subsection{Refined Research Question}
+
+A suitable research question for this extension might be:
+
+\textit{"How does the integration of ChatGPT into educational curricula affect the academic performance and engagement levels of students in higher education institutions?"}
+
+This question builds upon the second objective of paper one, but narrows the scope specificically to performance and engagement in education. Rather than looking for "opportunities and challenges" \cite{paper1}, we are looking specifically at performance and engagement, which are directly measurable.
+
+\subsection{Refined Hypothesis}
+
+A refined hypothesis for this research question could be:
+
+\textit{"The integration of ChatGPT into educational curricula significantly improves the academic performance and engagement levels of students in higher education institutions."}
+
+This hypothesis is directly testable and sets a clear expectation: that the use of ChatGPT in education has a positive effect on student outcomes. It can be validated or refuted through empirical research and statistical analysis. No hypothesis for objective two was presented in the original paper.
+
+\subsection{Experimental Design}
+
+A five-stage mixed methodology experimental design is proposed:
+
+\begin{enumerate}
+    \item Pre-Test - an academic test carried out without the use of an LLM
+    \item Implementation of ChatGPT
+    \item Longitudinal Monitoring over one academic year
+    \item Post-Test - At the end of the period, conduct the same assessment as in the pre-test.
+    \item Optional follow-up
+\end{enumerate}
+
+Participants will be divided into two groups: a test group and a control. A pre-test and post-test will be administered one year apart. This will seek to provide quantitative data showing change in academic performance. 
+
+In addition, qualitative data will be collected during the experiment by means of an open-ended survey. This will be subject to thematic analysis that can be correlated with changes in academic performance. 
+
+\subsection{Subject Selection}
+
+In the proposed study, participants will be selected to form two distinct groups: an experimental group that will engage with ChatGPT and a control group that will not. The selection process will employ stratified sampling techniques to ensure equal representation of relevant demographic factors. \cite{mertens}
+
+All subjects will be selected from the same year group and academic subject. This will control for variables such as differences in academic assessment techniques or teaching methods and allow the pre and post-tests to be standardised, producing cleaner quantitative data. This will somewhat limit the scope of the study, and further work may be required at a later date.
+
+Participant loss may be an issue, specifically amongst the control group.
+
+\subsection{Pre-Test}
+
+Prior to the intervention, a comprehensive pre-test will be conducted. This preliminary assessment will involve standardised academic performance metrics tailored to capture baseline data. These instruments will be administered to both the experimental and control groups, ensuring comparability of data.
+
+\subsection{Implementation phase}
+
+During the implementation phase, ChatGPT will be introduced to the experimental group. This phase will involve a structured rollout of the technology, including initial training sessions to familiarise students with ChatGPT's functionalities and best practices for its academic use. Participants will be encouraged to integrate ChatGPT into various aspects of their learning, such as research, writing, and problem-solving. 
+
+\subsection{Longitudinal monitoring }
+
+During the monitoring phase, spanning one academic year, data will be collected to track the progress and experiences of both the experimental and control groups. This monitoring will consist of an open-ended survey, filled in once each academic term, to gauge the types of interactions each subject has with the technology.
+
+This qualitative data will be subjected to later thematic analysis via Taguette \cite{taguette}.
+
+\subsection{Post-test}
+
+At the conclusion of the academic year, a post-test assessment will be conducted. This phase will mirror the pre-test, employing the same academic performance metrics to evaluate changes. 
+
+At this time, raw data will be gathered from the ChatGPT API, including total tokens generated per subject and time spent using the app throughout the year.
+
+\subsection{Analysis}
+ 
+Paired t-tests will be used to compare the pre and post-intervention data within and between groups. This analysis will ascertain whether significant changes in academic performance and engagement are attributable to the use of ChatGPT. 
+
+In addition, qualitative data from the longitudinal study and interviews will be subjected to thematic analysis to extract underlying themes about each subject's use of the technology. The combination of quantitative and qualitative data analysis will provide a holistic understanding of ChatGPT's effectiveness over the academic year. \cite{cresswell}
+
+By correlating ChatGPT usage stats against the delta in academic performance, it may be possible to determine whether ChatGPT is beneficial or harmful to student success. 
+
+By correlating delta academic performance against the thematic analysis of the longitudinal study, it may be possible to determine precisely which patterns of usage are beneficial and which are harmful. Since this data is qualitative, it may yield unexpected surprises.
+
+The comparison of pre and post-test results will provide quantitative data to assess the impact of ChatGPT, while qualitative feedback gathered through open-ended survey questions will offer deeper insights into students' experiences and perceptions. This comprehensive evaluation will facilitate a robust analysis of the longitudinal effects of ChatGPT in an educational setting.
+
+\subsection{Follow up}
+
+An optional follow-up phase will occur one academic year after the conclusion of the analysis phase and will be presented in a separate paper. This phase will involve conducting a survey, based on the earlier thematic analysis of the longitudinal study, to understand the long-term effects on students' academic performance and engagement with the technology. 
+
+The follow-up assessments will compare these long-term outcomes with the data collected during the pre-test and post-test phases. This extended timeframe will provide insights into the durability of ChatGPT's impact and any evolving perceptions or usage patterns among students.
+
+
+\section{Task 3: Discussion of key characteristics}
+
+
+Merriam defines qualitative research as a process of discovering the meaning that subjects find in the world. Whereas quantitative research imposes the researcher's ideas onto the subject, channelling the subject's responses down specific predefined paths, qualitative research inverts the direction of control, allowing the subject to guide the researcher towards questions that more closely match the subject's perception of the world. \cite{merriam}
+
+Qualitative research is investigative. It seeks to ask open-ended questions. It brings the researcher towards the subject, rather than channelling the subject into a framework defined by the researcher.
+
+As Mertens says, this can have implications in terms of social justice. Rather than seeking to impose a worldview on the subject, the researcher is empowered to listen to the subject. \cite{mertens}
+
+However, this presents significant challenges when interpreting the results. Data collected in this way is not standardised. Different subjects may approach questions in incompatible ways. Standard statistical tools like ANOVA are unlikely to apply.
+
+Queros identifies seven types of qualitative research including observation, ethnography, field research, focus groups, case studies, structured interviewed and in depth interviews \cite{queros}. Other examples of qualitative research methods might include open-ended surveys, and even non-traditional methods such as painting or drawing. \cite{merriam}
+
+Qualitative techniques are particularly appropriate for introductory exploration of the research question, when it might not be clear exactly what specific data to collect \cite{merriam}. They are particularly strong when dealing with diverse subjects who may not share the same worldview as the experimenter \cite{mertens}. They may not be as appropriate as a tool to produce hard data. Although hard data can be extracted from them, this may not be of sufficient quality to be subjected to statistical analysis \cite{allwood}
+
+To give a concrete example, in "Programming Languages, improvements, popularity and the need of the future", Norlin employs an initial qualitative interview phase to get a sense of the potentially unknown reasons developers have for preferring one language over another. This complements a later quantitative phase. \cite{norlins}
+
+In contrast, quantitative research is standardised. Variables are controlled for as subjects will have been presented with the exact same set of questions. Data generated using quantitative methodologies is hard data \cite{allwood}, compatible with various statistical techniques. However, it may be the case that the questions the researcher asks are not the questions the subject would choose to respond to \cite{mertens}. 
+
+We see this clearly in paper one, where the researchers attempted to correlate gender and field of study against awareness of LLMs and found no correlation. The researchers decided on their metrics in advance and picked a metric that yielded no particularly interesting results. \cite{paper1}
+
+By contrast, in paper two, the author employs an initial quantitative phase to inform the direction of a secondary qualitative phase, uncovering correlations that may not have been obvious without this first undirected phase. In this case, mixed methods provide the best of both worlds. \cite{paper2}
+
+Queros identifies five types of quantitative research: Field experiments, simulation, surveys, correlation studies and multivariate analysis. \cite{queros}. Anything that yields a hard numeric or Boolean response could be considered quantitative. \cite{allwood}
+
+As we see in paper two, thematic analysis can effectively convert qualitative data into quantitative data, discovering common themes in free-form responses. A tool such as Taguette \cite{taguette} can be used to tag portions of a text response. The frequency of themes and correlations between themes can be treated as quantitative. However, this is typically a manual process that involves a good deal of subjectivity. \cite{allwood}
+
+The distinction between methods is not always clear cut, Allwood highlights the heterogeneity of qualitative approaches in research. He points out that these methods exhibit significant variation in aspects such as their generalizability, epistemological perspectives, structural characteristics, the extent of interest in discovering regularities, use of quantification, and approaches to causal explanation. This could certainly be considered a weakness. This diverse nature of qualitative methods challenges the notion of a clear-cut distinction between qualitative and quantitative research, underscoring the complexity and overlap inherent in various research methodologies. \cite{allwood}
+
+\section{Conclusion}
+
+
+In this report, we have critically analysed two papers with similar objectives but very different methodologies. We have seen how the mixed methodology employed by paper two allows for deeper insights into opinions and usage patterns amongst students. 
+
+We have offered an alternative research design that builds upon the questions posed by paper one, incorporating a mixed methodology that incorporates some of the strengths of paper two, while providing controlled quantitative data in the form of an academic test.
+
+Finally, we have discussed the differences between qualitative and quantitative data, specifically looking at how qualitative data can relate the experiment to the subject's individualised world view \cite{mertens}, and discussing the heterogeneous nature of qualitative data \cite{allwood}.
+
+
+\medskip
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% \printbibliography
+
+
+\end{document}
